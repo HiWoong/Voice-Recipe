@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "27997369702",
+    "project_id": "acoustic-recipe",
+    "storage_bucket": "acoustic-recipe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:27997369702:android:ff7c45b26372de23c1c4a7",
+        "android_client_info": {
+          "package_name": "com.penelope.acousticrecipe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "27997369702-4h24h54e27jf1rphbkntdcik91ka9494.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1IkarB4jDJ1RU0BBlELzmPWYLMs_6C1w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "27997369702-4h24h54e27jf1rphbkntdcik91ka9494.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

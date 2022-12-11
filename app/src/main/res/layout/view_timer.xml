@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewFoodName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        tools:text="두부 요리" />
+
+    <TextView
+        android:id="@+id/textViewManual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewFoodName"
+        android:layout_marginTop="8dp"
+        tools:text="기름을 두르고 두부를 5분 구워줍니다" />
+
+    <TextView
+        android:id="@+id/textViewTimeLeft"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewManual"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:text="04 : 32" />
+
+    <ImageButton
+        android:id="@+id/imageViewPlayPause"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/textViewTimeLeft"
+        android:layout_alignStart="@id/textViewTimeLeft"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_play" />
+
+    <ImageButton
+        android:id="@+id/imageViewStop"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/textViewTimeLeft"
+        android:layout_alignTop="@id/imageViewPlayPause"
+        android:layout_alignEnd="@id/textViewTimeLeft"
+        android:src="@drawable/ic_close" />
+
+</RelativeLayout>

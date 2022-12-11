@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_main"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.penelope.acousticrecipe.ui.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.penelope.acousticrecipe.ui.history.HistoryFragment"
+        android:label="fragment_history"
+        tools:layout="@layout/fragment_history" />
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.penelope.acousticrecipe.ui.search.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_searchFragment_to_historyFragment"
+            app:destination="@id/historyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/recipeFragment"
+        android:name="com.penelope.acousticrecipe.ui.recipe.RecipeFragment"
+        android:label="fragment_recipe"
+        tools:layout="@layout/fragment_recipe" >
+        <argument
+            android:name="recipe"
+            app:argType="com.penelope.acousticrecipe.data.recipe.Recipe" />
+        <action
+            android:id="@+id/action_recipeFragment_to_manualFragment"
+            app:destination="@id/manualFragment" />
+    </fragment>
+    <action android:id="@+id/action_global_recipeFragment" app:destination="@id/recipeFragment" />
+    <fragment
+        android:id="@+id/manualFragment"
+        android:name="com.penelope.acousticrecipe.ui.manual.ManualFragment"
+        android:label="fragment_manual"
+        tools:layout="@layout/fragment_manual" >
+        <argument
+            android:name="recipe"
+            app:argType="com.penelope.acousticrecipe.data.recipe.Recipe" />
+    </fragment>
+</navigation>
